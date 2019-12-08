@@ -8,11 +8,12 @@ This documentation covers the walkthrough for using this script to recreate your
 2. A micro USB attached to an electrode (placed on the occipital lobe)
 
 # How to use
-1. Run `python poly_surf.py` in dir. It will look for the MAC address for the Muse in the 'muse_MACs.py' file. You might have to run:
+1.Turn on the Muse and run `python poly_surf.py` in main dir. It will look for the MAC address for the Muse in the 'muse_MACs.py' file. You might have to run the lines bellow if the MAC address is not already on the list.
 ```
 bluetooth ctl
 scan on
 connect XX:XX:XX:XX:XX:XX
 ```
-if the MAC address is not already on the list.
+2. A cmd should pop up after executing. This script performs 48 rasters across the image in 'nature_article/flashing_imgs/'. You manually enter which raster you would like to slide over with `stims X`, where `X` is a int or float. Ex: `stims 1.2... stims 1.4... stims 1.6...` until you have rastered the image 48 times. It can go by any interval, but intervales of 0.2 work best.
+3. After rastering the image 48 times, run `combine_img.py` in the main dir. You can also run `weighted_av.py` to get a smoother, crisper image. The image will be generated in 'nature_article/raw_results/'. If using `weighted_av.py`, it will be generated in 'nature_article/transformed_results/'. 
 
