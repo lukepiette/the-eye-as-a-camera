@@ -1,1 +1,2 @@
-# the-eye-as-a-camera
+# The Eye as a Camera
+
