@@ -8,7 +8,7 @@ This documentation covers the walkthrough for using this script to recreate your
 2. A micro USB attached to an electrode (placed on the occipital lobe)
 
 # How to use
-1.Turn on the Muse and run `python poly_surf.py` in main dir. It will look for the MAC address for the Muse in the 'muse_MACs.py' file. You might have to run the lines bellow if the MAC address is not already on the list.
+1. Turn on the Muse and run `python poly_surf.py` in main dir. It will look for the MAC address for the Muse in the 'muse_MACs.py' file. You might have to run the lines bellow if the MAC address is not already on the list.
 ```
 bluetooth ctl
 scan on
