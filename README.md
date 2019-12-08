@@ -21,5 +21,4 @@ connect XX:XX:XX:XX:XX:XX
 - You can change the image being rastered across in 'nature_article/flashing_imgs/'. The default is 'myface_hor.jpg'.
 - All individual raster images are stored in 'nature_article/take_1/'. They are assembled and interpolated later to form one image.
 - Backups are automatically stored in 'nature_article/backups'.
-
 - You will probably have a headache trying to install all the packages required. There's a list of pip freezed packages [here](requirements.txt), but they are global packages and are not specific to this script, meaning 90% of them are useless for this application. If you have all of them installed, the script should run smoothly. Alternatively, you can keep trying to run it and install the missing packages until it works. Good luck! 
